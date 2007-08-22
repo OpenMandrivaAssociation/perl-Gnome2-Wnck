@@ -1,7 +1,7 @@
 %define	module	Gnome2-Wnck
 %define	name	perl-%{module}
 %define	version	0.14
-%define	release	%mkrel 2
+%define	release	%mkrel 3
 %define	fmodule	Gnome2/Wnck
 
 Summary:	Perl module for the gnome2-2.x wnck libraries
@@ -11,12 +11,13 @@ Release:	%{release}
 License:	GPL or Artistic
 Group:		Development/GNOME and GTK+
 Source0:	%{module}-%{version}.tar.bz2
+# (fc) fix support of libwnck >= 2.19.5 (CVS)
+Patch0:		Gnome2-Wnck-0.14-libwnck219.patch
 URL:		http://gtk2-perl.sf.net/
-BuildRequires:	libwnck >= 2.12.0, perl-Glib => 1.00 perl-Gtk2 XFree86-Xvfb
+BuildRequires:	perl-Glib => 1.00 perl-Gtk2 XFree86-Xvfb
 BuildRequires:	perl-devel perl-ExtUtils-Depends perl-ExtUtils-PkgConfig 
 BuildRequires:  pkgconfig
-BuildRequires:  libwnck-devel >= 2.12.0
-BuildRequires:  glitz-devel
+BuildRequires:  libwnck-devel >= 2.19.5
 Requires:	perl-Glib >= 1.00
 Conflicts:	drakxtools < 9.1-15mdk
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -29,6 +30,7 @@ for writing pagers and taskslists and stuff.
 
 %prep
 %setup -q -n %{module}-%{version}
+%patch0 -p1 -b .fixlibwnck219
 find -type d -name CVS | rm -rf 
 
 %build
