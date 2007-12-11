@@ -1,7 +1,7 @@
 %define	module	Gnome2-Wnck
 %define	name	perl-%{module}
-%define	version	0.14
-%define	release	%mkrel 3
+%define	version	0.15
+%define	release	%mkrel 1
 %define	fmodule	Gnome2/Wnck
 
 Summary:	Perl module for the gnome2-2.x wnck libraries
