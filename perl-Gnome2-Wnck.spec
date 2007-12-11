@@ -10,7 +10,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL or Artistic
 Group:		Development/GNOME and GTK+
-Source0:	%{module}-%{version}.tar.bz2
+Source0:	http://prdownloads.sourceforge.net/gtk2-perl/%{module}-%{version}.tar.bz2
 # (fc) fix support of libwnck >= 2.19.5 (CVS)
 Patch0:		Gnome2-Wnck-0.14-libwnck219.patch
 URL:		http://gtk2-perl.sf.net/
