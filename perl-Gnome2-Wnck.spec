@@ -18,7 +18,6 @@ BuildRequires:  pkgconfig
 BuildRequires:  libwnck-devel >= 2.19.5
 Requires:	perl-Glib >= 1.00
 Conflicts:	drakxtools < 9.1-15mdk
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This module provides perl access to GNOME-2.x wnck libraries.
