@@ -18,7 +18,7 @@ BuildRequires:  perl-ExtUtils-PkgConfig
 BuildRequires:	perl-Glib => 1.00
 BuildRequires:  perl-Gtk2
 BuildRequires:  pkgconfig
-BuildRequires:  XFree86-Xvfb
+BuildRequires:  x11-server-xvfb
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 Conflicts:	drakxtools < 9.1-15mdk
