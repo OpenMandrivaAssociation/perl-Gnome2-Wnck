@@ -8,7 +8,7 @@ Release:    3
 Summary:	Perl module for the gnome2-2.x wnck libraries
 License:	GPL+ or Artistic
 Group:		Development/GNOME and GTK+
-Url:		http://gtk2-perl.sf.net/
+Url:		https://gtk2-perl.sf.net/
 Source0:	http://prdownloads.sourceforge.net/gtk2-perl/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:  libwnck-devel >= 2.19.5
